@@ -1,0 +1,3 @@
+django-admin startproject UrbanDjango # Название файла для создания проекта
+python manage.py runserver # Запуск сервера
+python manage.py startapp example1 # Название файла для создания приложения

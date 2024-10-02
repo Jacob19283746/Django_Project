@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Биржа</title>
+</head>
+<body>
+    <h1>Биржа</h1>
+    <ul>
+        {% for coin in coins %}
+            <li>
+                {{ coin }}
+                <button>Купить</button>
+                <button>Продать</button>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="http://127.0.0.1:8000/platform/">
+        <button>Вернутся обратно</button>
+    </a>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{% extends 'menu.html' %}
+
+{% block title %}Биржа{% endblock %}
+
+{% block pagename %}
+    <h1>Валютные пары</h1>
+{% endblock %}
+
+{% block content %}
+    <ul>
+        {% for coin in coins %}
+            <li>
+                {{ coin }}
+                <button>Купить</button>
+                <button>Продать</button>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
